@@ -20,11 +20,11 @@ function Player(player) {
     const img = Widget.Box({
         class_name: "img",
         vpack: "start",
-        css: player.bind("cover_path").transform(p => {
-            console.log(p); return `
+        css: player.bind("cover_path").transform(p =>
+            `
             ${p ? "" : 'min-width: 0;'}
             background-image: url('${p}');
-        `}),
+        `),
     })
 
     const title = Widget.Label({

@@ -21,7 +21,6 @@ export default new Widget.Button({
             || mpris.players.find(p => p["bus-name"] == lastBus.value)
             || mpris.players[0]
 
-        console.log(player)
         if (player) {
             self.children[0].label = player["track-artists"][0]
             self.children[2].label = player["track-title"]
