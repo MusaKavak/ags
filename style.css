@@ -1,0 +1,325 @@
+* {
+all: unset;
+}
+
+tooltip,
+menu {
+    background-color: @backgroundTsp;
+    color: @onBackground;
+    border-radius: 1.705rem;
+    font-size: x-large;
+    padding: 1rem;
+}
+
+menuitem {
+    margin: .5rem;
+}
+
+menuitem image {
+    font-size: 2rem;
+    color: red;
+}
+
+switch {
+    background-color: @surfaceContainerHighest;
+    border: 2px solid @outline;
+    color: transparent;
+    border-radius: 1.705rem;
+    min-width: 35px;
+    min-height: 15px;
+    padding: 3px;
+    font-size: 1px;
+}
+
+switch slider {
+    background-color: @outline;
+    border-radius: 50%;
+    min-width: 10px;
+    min-height: 10px;
+}
+
+switch.active {
+    background-color: @primary;
+}
+
+switch.active slider {
+    background-color: @onPrimary;
+}
+
+separator {
+    background-color: @outline;
+}
+
+.bar-bg {
+    background-color: @backgroundTsp;
+    min-height: 2.727rem;
+}
+
+.corner {
+    background-color: @backgroundTsp;
+    border-radius: 1.705rem;
+    -gtk-outline-radius: 1.705rem;
+}
+
+.corner-black {
+    background-color: black;
+    border-radius: 1.705rem;
+    -gtk-outline-radius: 1.705rem;
+}
+
+.workspace {
+    margin: 0 .5rem;
+    color: @primary;
+    padding: 0.2rem 1rem;
+    border-radius: 1.705rem;
+    transition: .3s;
+}
+
+.workspace.dirty {
+    background-color: @primaryContainerTsp;
+    color: @onPrimaryContainer;
+}
+
+.workspace.active {
+    background-color: @primary;
+    color: @onPrimary;
+}
+
+.card {
+    background-color: @primaryContainerTsp;
+    color: @onPrimaryContainer;
+    padding: 0.3rem 1rem;
+    border-radius: 1.705rem;
+}
+
+.card image {
+    font-size: large;
+}
+
+.level-bar {
+    color: @primary;
+    background-color: @backgroundTsp;
+    font-size: large;
+    margin: 5px;
+}
+
+.rightbar {
+    background-color: @backgroundTsp;
+    border-radius: 1.705rem;
+}
+
+.rightbar-header {
+    margin: 1rem;
+    color: @onBackground;
+    font-size: large;
+}
+
+.rightbar-header-icon.large {
+    font-size: 2rem;
+}
+
+.rightbar-mixer {
+    padding: 0 10px;
+}
+
+.rightbar-mixer image {
+    font-size: 3.5rem;
+}
+
+scale trough {
+    border-radius: 0.477rem;
+    min-height: 1rem;
+    background-color: @primaryContainerTsp;
+}
+
+scale highlight {
+    border-radius: 0.477rem;
+    min-height: 1rem;
+    background-color: @primary;
+}
+
+
+calendar {
+    padding: 0.8rem;
+    color: @onBackground;
+}
+
+calendar.highlight {
+    color: @primary;
+}
+
+/* Launcher */
+.launcher-section {
+    background-color: @backgroundTsp;
+    border-radius: 1.705rem;
+    min-width: 400px;
+}
+
+.pinned-app-icon {
+    font-size: 5rem;
+    margin: 1rem;
+}
+
+.launcher-bar-entry {
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px 0;
+    color: @onBackground;
+}
+
+.launcher-bar-scroll {
+    min-height: 200px;
+    margin: 10px;
+}
+
+.launcher-bar-app-item {
+    padding: 10px;
+    font-size: larger;
+    color: @onBackground;
+
+}
+
+.launcher-bar-app-item-icon,
+.script-launcher-icon {
+    font-size: 3rem;
+
+}
+
+.launcher-bar-app-item-pin {
+    color: @secondary;
+}
+
+.script-launcher-item {
+    margin: 10px;
+}
+
+.network-box {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: @backgroundTsp;
+    border-radius: 1.705rem;
+}
+
+.network-toggle {
+    color: @onPrimaryContainer;
+    font-size: large;
+}
+
+.network-toggle image {
+    font-size: 2rem;
+}
+
+.topleft-icon {
+    color: @primary;
+}
+
+
+/* COLORS */
+@define-color primary_paletteKeyColor rgb(0,172,152);
+@define-color primary_paletteKeyColorTsp rgba(0,172,152,0.7);
+@define-color secondary_paletteKeyColor rgb(98,124,118);
+@define-color secondary_paletteKeyColorTsp rgba(98,124,118,0.7);
+@define-color tertiary_paletteKeyColor rgb(93,122,146);
+@define-color tertiary_paletteKeyColorTsp rgba(93,122,146,0.7);
+@define-color neutral_paletteKeyColor rgb(7,7,7);
+@define-color neutral_paletteKeyColorTsp rgba(7,7,7,0.7);
+@define-color neutral_variant_paletteKeyColor rgb(7,7,7);
+@define-color neutral_variant_paletteKeyColorTsp rgba(7,7,7,0.7);
+@define-color background rgb(19,19,19);
+@define-color backgroundTsp rgba(19,19,19,0.7);
+@define-color onBackground rgb(226,226,226);
+@define-color onBackgroundTsp rgba(226,226,226,0.7);
+@define-color surface rgb(19,19,19);
+@define-color surfaceTsp rgba(19,19,19,0.7);
+@define-color surfaceDim rgb(19,19,19);
+@define-color surfaceDimTsp rgba(19,19,19,0.7);
+@define-color surfaceBright rgb(57,57,57);
+@define-color surfaceBrightTsp rgba(57,57,57,0.7);
+@define-color surfaceContainerLowest rgb(14,14,14);
+@define-color surfaceContainerLowestTsp rgba(14,14,14,0.7);
+@define-color surfaceContainerLow rgb(27,27,27);
+@define-color surfaceContainerLowTsp rgba(27,27,27,0.7);
+@define-color surfaceContainer rgb(31,31,31);
+@define-color surfaceContainerTsp rgba(31,31,31,0.7);
+@define-color surfaceContainerHigh rgb(42,42,42);
+@define-color surfaceContainerHighTsp rgba(42,42,42,0.7);
+@define-color surfaceContainerHighest rgb(53,53,53);
+@define-color surfaceContainerHighestTsp rgba(53,53,53,0.7);
+@define-color onSurface rgb(226,226,226);
+@define-color onSurfaceTsp rgba(226,226,226,0.7);
+@define-color surfaceVariant rgb(71,71,71);
+@define-color surfaceVariantTsp rgba(71,71,71,0.7);
+@define-color onSurfaceVariant rgb(198,198,198);
+@define-color onSurfaceVariantTsp rgba(198,198,198,0.7);
+@define-color inverseSurface rgb(226,226,226);
+@define-color inverseSurfaceTsp rgba(226,226,226,0.7);
+@define-color inverseOnSurface rgb(48,48,48);
+@define-color inverseOnSurfaceTsp rgba(48,48,48,0.7);
+@define-color outline rgb(145,145,145);
+@define-color outlineTsp rgba(145,145,145,0.7);
+@define-color outlineVariant rgb(71,71,71);
+@define-color outlineVariantTsp rgba(71,71,71,0.7);
+@define-color shadow rgb(0,0,0);
+@define-color shadowTsp rgba(0,0,0,0.7);
+@define-color scrim rgb(0,0,0);
+@define-color scrimTsp rgba(0,0,0,0.7);
+@define-color surfaceTint rgb(86,219,197);
+@define-color surfaceTintTsp rgba(86,219,197,0.7);
+@define-color primary rgb(86,219,197);
+@define-color primaryTsp rgba(86,219,197,0.7);
+@define-color onPrimary rgb(0,55,48);
+@define-color onPrimaryTsp rgba(0,55,48,0.7);
+@define-color primaryContainer rgb(0,80,70);
+@define-color primaryContainerTsp rgba(0,80,70,0.7);
+@define-color onPrimaryContainer rgb(118,248,225);
+@define-color onPrimaryContainerTsp rgba(118,248,225,0.7);
+@define-color inversePrimary rgb(0,107,94);
+@define-color inversePrimaryTsp rgba(0,107,94,0.7);
+@define-color secondary rgb(177,204,197);
+@define-color secondaryTsp rgba(177,204,197,0.7);
+@define-color onSecondary rgb(28,53,48);
+@define-color onSecondaryTsp rgba(28,53,48,0.7);
+@define-color secondaryContainer rgb(53,78,72);
+@define-color secondaryContainerTsp rgba(53,78,72,0.7);
+@define-color onSecondaryContainer rgb(206,234,226);
+@define-color onSecondaryContainerTsp rgba(206,234,226,0.7);
+@define-color tertiary rgb(172,202,229);
+@define-color tertiaryTsp rgba(172,202,229,0.7);
+@define-color onTertiary rgb(19,51,72);
+@define-color onTertiaryTsp rgba(19,51,72,0.7);
+@define-color tertiaryContainer rgb(118,148,173);
+@define-color tertiaryContainerTsp rgba(118,148,173,0.7);
+@define-color onTertiaryContainer rgb(0,0,0);
+@define-color onTertiaryContainerTsp rgba(0,0,0,0.7);
+@define-color error rgb(255,180,171);
+@define-color errorTsp rgba(255,180,171,0.7);
+@define-color onError rgb(105,0,5);
+@define-color onErrorTsp rgba(105,0,5,0.7);
+@define-color errorContainer rgb(147,0,10);
+@define-color errorContainerTsp rgba(147,0,10,0.7);
+@define-color onErrorContainer rgb(255,218,214);
+@define-color onErrorContainerTsp rgba(255,218,214,0.7);
+@define-color primaryFixed rgb(118,248,225);
+@define-color primaryFixedTsp rgba(118,248,225,0.7);
+@define-color primaryFixedDim rgb(86,219,197);
+@define-color primaryFixedDimTsp rgba(86,219,197,0.7);
+@define-color onPrimaryFixed rgb(0,32,27);
+@define-color onPrimaryFixedTsp rgba(0,32,27,0.7);
+@define-color onPrimaryFixedVariant rgb(0,80,70);
+@define-color onPrimaryFixedVariantTsp rgba(0,80,70,0.7);
+@define-color secondaryFixed rgb(205,232,225);
+@define-color secondaryFixedTsp rgba(205,232,225,0.7);
+@define-color secondaryFixedDim rgb(177,204,197);
+@define-color secondaryFixedDimTsp rgba(177,204,197,0.7);
+@define-color onSecondaryFixed rgb(6,32,27);
+@define-color onSecondaryFixedTsp rgba(6,32,27,0.7);
+@define-color onSecondaryFixedVariant rgb(51,75,70);
+@define-color onSecondaryFixedVariantTsp rgba(51,75,70,0.7);
+@define-color tertiaryFixed rgb(202,230,255);
+@define-color tertiaryFixedTsp rgba(202,230,255,0.7);
+@define-color tertiaryFixedDim rgb(172,202,229);
+@define-color tertiaryFixedDimTsp rgba(172,202,229,0.7);
+@define-color onTertiaryFixed rgb(0,30,48);
+@define-color onTertiaryFixedTsp rgba(0,30,48,0.7);
+@define-color onTertiaryFixedVariant rgb(44,74,96);
+@define-color onTertiaryFixedVariantTsp rgba(44,74,96,0.7);

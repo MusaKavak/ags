@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "code",
+        "exec": "env CHROME_EXECUTABLE=/usr/bin/chromium code /home/musa0/projects/test_app/"
+    },
+    {
+        "icon": "rider",
+        "exec": "rider /home/musa0/projects/license/Licence"
+    },
+    {
+        "icon": "code",
+        "exec": "code /home/musa0/projects/uzayan/"
+    },
+    {
+        "icon": "drive-harddisk-symbolic",
+        "exec": "echo 1qwas1324 | sudo -S mount -t ntfs /dev/nvme0n1p3 /home/musa0/winC/"
+    },
+    {
+        "icon": "vector",
+        "exec": "/home/musa0/Templates/ib.js"
+    },
+    {
+        "icon": "theme-config",
+        "exec": "code /home/musa0/.config/ags/"
+    },
+    {
+        "icon": "raindrop",
+        "exec": "code /home/musa0/.config/hypr/"
+    },
+    {
+        "icon": "code",
+        "exec": "code /home/musa0/.config/ags/launcher/"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Firefox X",
+        "icon": "firefox",
+        "exec": "/usr/lib/firefox/firefox -p X"
+    },
+    {
+        "name": "Firefox Y",
+        "icon": "firefox-aurora",
+        "exec": "/usr/lib/firefox/firefox -p Y"
+    },
+    {
+        "name": "Dolphin",
+        "icon": "org.kde.dolphin",
+        "exec": "dolphin"
+    },
+    {
+        "name": "Lutris",
+        "icon": "lutris",
+        "exec": "prime-run lutris"
+    },
+    {
+        "name": "Bitwarden",
+        "icon": "bitwarden",
+        "exec": "bitwarden-desktop"
+    },
+    {
+        "name": "Rider",
+        "icon": "/usr/share/rider/bin/rider.png",
+        "exec": "/usr/share/rider/bin/rider.sh %f"
+    },
+    {
+        "name": "Chromium",
+        "icon": "chromium",
+        "exec": "/usr/bin/chromium %U"
+    },
+    {
+        "name": "Android Studio",
+        "icon": "/home/musa0/.local/share/android-studio/bin/studio.svg",
+        "exec": "\"/home/musa0/.local/share/android-studio/bin/studio.sh\" %f"
+    },
+    {
+        "name": "Inkscape",
+        "icon": "org.inkscape.Inkscape",
+        "exec": "prime-run inkscape"
+    },
+    {
+        "name": "WWE 2K19",
+        "icon": "lutris_wwe-2k19",
+        "exec": "env LUTRIS_SKIP_INIT=1 prime-run lutris lutris:rungameid/3"
+    },
+    {
+        "name": "DrawIO",
+        "icon": "umbrello_diagram_class-symbolic",
+        "exec": "/home/musa0/drawio/drawio24.7.5.AppImage"
+    }
+]

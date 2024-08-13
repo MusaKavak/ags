@@ -1,0 +1,4 @@
+    {
+        "icon": "code",
+        "exec": " kitty --detach --hold -d ~/projects/vue-project/ ~/projects/vue-project/start.sh"
+    }
