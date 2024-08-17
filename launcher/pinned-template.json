@@ -1,0 +1,5 @@
+{
+    "name": "Firefox",
+    "icon": "firefox",
+    "exec": "/usr/lib/firefox/firefox"
+}

@@ -1,0 +1,4 @@
+{
+    "icon": "code",
+    "exec": "code /path/to/project"
+}
