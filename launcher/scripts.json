@@ -4,8 +4,8 @@
         "exec": "env CHROME_EXECUTABLE=/usr/bin/chromium code /home/musa0/projects/test_app/"
     },
     {
-        "icon": "rider",
-        "exec": "rider /home/musa0/projects/license/Licence"
+        "icon": "code",
+        "exec": "code /home/musa0/projects/Quizz-app/"
     },
     {
         "icon": "code",

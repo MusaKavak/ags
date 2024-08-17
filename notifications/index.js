@@ -55,13 +55,14 @@ function Notification(n) {
 
     const actions = Widget.Box({
         class_name: "actions",
+        hpack: "end",
+        spacing: 10,
         children: n.actions.map(({ id, label }) => Widget.Button({
             class_name: "action-button",
             on_clicked: () => {
                 n.invoke(id)
                 n.dismiss()
             },
-            hexpand: true,
             child: Widget.Label(label),
         })),
     })
@@ -89,15 +90,15 @@ function Notification(n) {
     )
 }
 
-Utils.timeout(100, () => Utils.notify({
-    summary: "Notification Popup Example",
-    iconName: "info-symbolic",
-    body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing "
-        + "minim sint cillum sint consectetur cupidatat.",
-    actions: {
-        "Cool": () => print("pressed Cool"),
-    },
-}))
+// Utils.timeout(100, () => Utils.notify({
+//     summary: "Notification Popup Example",
+//     iconName: "info-symbolic",
+//     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing "
+//         + "minim sint cillum sint consectetur cupidatat.",
+//     actions: {
+//         "Cool": () => print("pressed Cool"),
+//     },
+// }))
 
 export function NotificationPopups(monitor = 0) {
     const list = Widget.Box({

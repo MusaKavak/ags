@@ -1,5 +1,5 @@
 * {
-all: unset;
+    all: unset;
 }
 
 tooltip,
@@ -213,14 +213,70 @@ calendar.highlight {
     color: @primary;
 }
 
+/* Notifications */
+
+window.notification-popups box.notifications {
+    padding: .5em;
+}
+
+.icon {
+    min-width: 68px;
+    min-height: 68px;
+    margin-right: 1em;
+}
+
+.icon image {
+    font-size: 58px;
+    /* to center the icon */
+    margin: 5px;
+    color: @onPrimaryContainer;
+}
+
+.icon box {
+    min-width: 68px;
+    min-height: 68px;
+    border-radius: 1.7rem;
+}
+
+.notification {
+    min-width: 450px;
+    border-radius: 11px;
+    padding: 1em;
+    margin: .5em;
+    border: 1px solid @outlineTsp;
+    background-color: @backgroundTsp;
+}
+
+.notification.critical {
+    border: 1px solid lightcoral;
+}
+
+.title {
+    color: @onPrimaryContainer;
+    font-size: 1.4em;
+}
+
+.body {
+    color: @onBackground;
+    font-size: 14px;
+}
+
+.actions .action-button {
+    padding: 5px 10px;
+    border-radius: 1.7rem;
+    font-size: 16px;
+    background-color: @primaryContainer;
+    color: @onPrimaryContainer;
+}
+
 
 /* COLORS */
-@define-color primary_paletteKeyColor rgb(186,88,106);
-@define-color primary_paletteKeyColorTsp rgba(186,88,106,0.7);
-@define-color secondary_paletteKeyColor rgb(144,110,114);
-@define-color secondary_paletteKeyColorTsp rgba(144,110,114,0.7);
-@define-color tertiary_paletteKeyColor rgb(148,112,71);
-@define-color tertiary_paletteKeyColorTsp rgba(148,112,71,0.7);
+@define-color primary_paletteKeyColor rgb(120,124,8);
+@define-color primary_paletteKeyColorTsp rgba(120,124,8,0.7);
+@define-color secondary_paletteKeyColor rgb(121,121,90);
+@define-color secondary_paletteKeyColorTsp rgba(121,121,90,0.7);
+@define-color tertiary_paletteKeyColor rgb(85,127,112);
+@define-color tertiary_paletteKeyColorTsp rgba(85,127,112,0.7);
 @define-color neutral_paletteKeyColor rgb(7,7,7);
 @define-color neutral_paletteKeyColorTsp rgba(7,7,7,0.7);
 @define-color neutral_variant_paletteKeyColor rgb(7,7,7);
@@ -263,32 +319,32 @@ calendar.highlight {
 @define-color shadowTsp rgba(0,0,0,0.7);
 @define-color scrim rgb(0,0,0);
 @define-color scrimTsp rgba(0,0,0,0.7);
-@define-color surfaceTint rgb(255,178,188);
-@define-color surfaceTintTsp rgba(255,178,188,0.7);
-@define-color primary rgb(255,178,188);
-@define-color primaryTsp rgba(255,178,188,0.7);
-@define-color onPrimary rgb(95,17,38);
-@define-color onPrimaryTsp rgba(95,17,38,0.7);
-@define-color primaryContainer rgb(125,41,59);
-@define-color primaryContainerTsp rgba(125,41,59,0.7);
-@define-color onPrimaryContainer rgb(255,217,221);
-@define-color onPrimaryContainerTsp rgba(255,217,221,0.7);
-@define-color inversePrimary rgb(155,64,82);
-@define-color inversePrimaryTsp rgba(155,64,82,0.7);
-@define-color secondary rgb(229,189,193);
-@define-color secondaryTsp rgba(229,189,193,0.7);
-@define-color onSecondary rgb(67,41,45);
-@define-color onSecondaryTsp rgba(67,41,45,0.7);
-@define-color secondaryContainer rgb(92,63,67);
-@define-color secondaryContainerTsp rgba(92,63,67,0.7);
-@define-color onSecondaryContainer rgb(255,217,221);
-@define-color onSecondaryContainerTsp rgba(255,217,221,0.7);
-@define-color tertiary rgb(234,191,143);
-@define-color tertiaryTsp rgba(234,191,143,0.7);
-@define-color onTertiary rgb(69,43,7);
-@define-color onTertiaryTsp rgba(69,43,7,0.7);
-@define-color tertiaryContainer rgb(176,138,94);
-@define-color tertiaryContainerTsp rgba(176,138,94,0.7);
+@define-color surfaceTint rgb(201,205,89);
+@define-color surfaceTintTsp rgba(201,205,89,0.7);
+@define-color primary rgb(201,205,89);
+@define-color primaryTsp rgba(201,205,89,0.7);
+@define-color onPrimary rgb(49,51,0);
+@define-color onPrimaryTsp rgba(49,51,0,0.7);
+@define-color primaryContainer rgb(71,74,0);
+@define-color primaryContainerTsp rgba(71,74,0,0.7);
+@define-color onPrimaryContainer rgb(229,233,114);
+@define-color onPrimaryContainerTsp rgba(229,233,114,0.7);
+@define-color inversePrimary rgb(95,98,0);
+@define-color inversePrimaryTsp rgba(95,98,0,0.7);
+@define-color secondary rgb(201,200,165);
+@define-color secondaryTsp rgba(201,200,165,0.7);
+@define-color onSecondary rgb(49,50,25);
+@define-color onSecondaryTsp rgba(49,50,25,0.7);
+@define-color secondaryContainer rgb(76,77,50);
+@define-color secondaryContainerTsp rgba(76,77,50,0.7);
+@define-color onSecondaryContainer rgb(235,234,197);
+@define-color onSecondaryContainerTsp rgba(235,234,197,0.7);
+@define-color tertiary rgb(163,208,190);
+@define-color tertiaryTsp rgba(163,208,190,0.7);
+@define-color onTertiary rgb(9,55,43);
+@define-color onTertiaryTsp rgba(9,55,43,0.7);
+@define-color tertiaryContainer rgb(111,154,137);
+@define-color tertiaryContainerTsp rgba(111,154,137,0.7);
 @define-color onTertiaryContainer rgb(0,0,0);
 @define-color onTertiaryContainerTsp rgba(0,0,0,0.7);
 @define-color error rgb(255,180,171);
@@ -299,27 +355,27 @@ calendar.highlight {
 @define-color errorContainerTsp rgba(147,0,10,0.7);
 @define-color onErrorContainer rgb(255,218,214);
 @define-color onErrorContainerTsp rgba(255,218,214,0.7);
-@define-color primaryFixed rgb(255,217,221);
-@define-color primaryFixedTsp rgba(255,217,221,0.7);
-@define-color primaryFixedDim rgb(255,178,188);
-@define-color primaryFixedDimTsp rgba(255,178,188,0.7);
-@define-color onPrimaryFixed rgb(64,0,19);
-@define-color onPrimaryFixedTsp rgba(64,0,19,0.7);
-@define-color onPrimaryFixedVariant rgb(125,41,59);
-@define-color onPrimaryFixedVariantTsp rgba(125,41,59,0.7);
-@define-color secondaryFixed rgb(255,217,221);
-@define-color secondaryFixedTsp rgba(255,217,221,0.7);
-@define-color secondaryFixedDim rgb(229,189,193);
-@define-color secondaryFixedDimTsp rgba(229,189,193,0.7);
-@define-color onSecondaryFixed rgb(44,21,24);
-@define-color onSecondaryFixedTsp rgba(44,21,24,0.7);
-@define-color onSecondaryFixedVariant rgb(92,63,67);
-@define-color onSecondaryFixedVariantTsp rgba(92,63,67,0.7);
-@define-color tertiaryFixed rgb(255,221,185);
-@define-color tertiaryFixedTsp rgba(255,221,185,0.7);
-@define-color tertiaryFixedDim rgb(234,191,143);
-@define-color tertiaryFixedDimTsp rgba(234,191,143,0.7);
-@define-color onTertiaryFixed rgb(43,23,0);
-@define-color onTertiaryFixedTsp rgba(43,23,0,0.7);
-@define-color onTertiaryFixedVariant rgb(94,65,28);
-@define-color onTertiaryFixedVariantTsp rgba(94,65,28,0.7);
+@define-color primaryFixed rgb(229,233,114);
+@define-color primaryFixedTsp rgba(229,233,114,0.7);
+@define-color primaryFixedDim rgb(201,205,89);
+@define-color primaryFixedDimTsp rgba(201,205,89,0.7);
+@define-color onPrimaryFixed rgb(28,29,0);
+@define-color onPrimaryFixedTsp rgba(28,29,0,0.7);
+@define-color onPrimaryFixedVariant rgb(71,74,0);
+@define-color onPrimaryFixedVariantTsp rgba(71,74,0,0.7);
+@define-color secondaryFixed rgb(229,229,192);
+@define-color secondaryFixedTsp rgba(229,229,192,0.7);
+@define-color secondaryFixedDim rgb(201,200,165);
+@define-color secondaryFixedDimTsp rgba(201,200,165,0.7);
+@define-color onSecondaryFixed rgb(28,29,6);
+@define-color onSecondaryFixedTsp rgba(28,29,6,0.7);
+@define-color onSecondaryFixedVariant rgb(72,72,45);
+@define-color onSecondaryFixedVariantTsp rgba(72,72,45,0.7);
+@define-color tertiaryFixed rgb(191,236,218);
+@define-color tertiaryFixedTsp rgba(191,236,218,0.7);
+@define-color tertiaryFixedDim rgb(163,208,190);
+@define-color tertiaryFixedDimTsp rgba(163,208,190,0.7);
+@define-color onTertiaryFixed rgb(0,33,23);
+@define-color onTertiaryFixedTsp rgba(0,33,23,0.7);
+@define-color onTertiaryFixedVariant rgb(36,78,65);
+@define-color onTertiaryFixedVariantTsp rgba(36,78,65,0.7);
